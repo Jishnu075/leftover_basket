@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "436607692940",
+    "project_id": "leftover-basket",
+    "storage_bucket": "leftover-basket.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436607692940:android:b45f694601fcb3be794ba9",
+        "android_client_info": {
+          "package_name": "com.example.leftover_basket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436607692940-h2m6f7kdev9sqffvqi94drd8vvrfu8tn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1RwXSgeixIH-7w6LAolFrJ9t1W5uYyjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436607692940-h2m6f7kdev9sqffvqi94drd8vvrfu8tn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
