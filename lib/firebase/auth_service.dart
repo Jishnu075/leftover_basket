@@ -39,4 +39,8 @@ class AuthService {
   Future<void> signOut() async {
     return await _firebaseAuth.signOut();
   }
+
+  String currentUser() {
+    return _firebaseAuth.currentUser!.email.toString();
+  }
 }
