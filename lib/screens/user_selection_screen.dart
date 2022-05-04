@@ -1,9 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:leftover_basket/components/user_selection_button.dart';
+import 'package:leftover_basket/components/buttons/user_selection_button.dart';
 import 'package:leftover_basket/screens/login_screen.dart';
 import 'package:leftover_basket/screens/main_donar_view.dart';
-import 'package:leftover_basket/screens/popups/login_error.dart';
+import 'package:leftover_basket/components/popups/login_error.dart';
 
 class UserSelectionScreen extends StatefulWidget {
   static const String id = 'user_selection_screen';

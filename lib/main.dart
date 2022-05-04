@@ -6,6 +6,7 @@ import 'package:leftover_basket/screens/onboarding_screen.dart';
 import 'package:leftover_basket/screens/signup_screen.dart';
 import 'package:leftover_basket/screens/user_selection_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:leftover_basket/wrapper.dart';
 import 'package:provider/provider.dart';
 import 'firebase/firebase_options.dart';
 
@@ -29,18 +30,16 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        initialRoute: OnBoardingScreen.id,
+        initialRoute: Wrapper.id,
         routes: {
+          Wrapper.id: (context) => Wrapper(),
           OnBoardingScreen.id: (context) => OnBoardingScreen(),
           UserSelectionScreen.id: (context) => UserSelectionScreen(),
           LoginScreen.id: (context) => LoginScreen(),
           SignUpScreen.id: (context) => SignUpScreen(),
           MainDonorView.id: (context) => MainDonorView(),
         },
-        // home: OnBoardingScreen(),
       ),
     );
   }
 }
-
-//TODO: fix button overflowed by pixel (Johannes Millke)

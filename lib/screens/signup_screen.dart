@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:leftover_basket/components/rounded_button.dart';
+import 'package:leftover_basket/components/buttons/rounded_button.dart';
 import 'package:leftover_basket/constants.dart';
 import 'package:leftover_basket/firebase/auth_service.dart';
 import 'package:provider/provider.dart';
