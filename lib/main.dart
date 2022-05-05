@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:leftover_basket/camera_gallery.dart';
 import 'package:leftover_basket/firebase/auth_service.dart';
 import 'package:leftover_basket/screens/login_screen.dart';
 import 'package:leftover_basket/screens/main_donar_view.dart';
+import 'package:leftover_basket/screens/md_add_screen.dart';
 import 'package:leftover_basket/screens/onboarding_screen.dart';
 import 'package:leftover_basket/screens/signup_screen.dart';
 import 'package:leftover_basket/screens/user_selection_screen.dart';
@@ -28,16 +30,20 @@ class MyApp extends StatelessWidget {
         Provider<AuthService>(
           create: (_) => AuthService(),
         ),
+        Provider<ImageController>(
+          create: (_) => ImageController(),
+        )
       ],
       child: MaterialApp(
         initialRoute: Wrapper.id,
         routes: {
           Wrapper.id: (context) => Wrapper(),
           OnBoardingScreen.id: (context) => OnBoardingScreen(),
-          UserSelectionScreen.id: (context) => UserSelectionScreen(),
+          // UserSelectionScreen.id: (context) => UserSelectionScreen(),
           LoginScreen.id: (context) => LoginScreen(),
           SignUpScreen.id: (context) => SignUpScreen(),
           MainDonorView.id: (context) => MainDonorView(),
+          MainDonorAddScreen.id: (context) => MainDonorAddScreen(),
         },
       ),
     );

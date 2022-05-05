@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:leftover_basket/screens/user_selection_screen.dart';
+import 'package:leftover_basket/screens/login_screen.dart';
 import 'package:leftover_basket/constants.dart';
 
 class OnBoardingScreen extends StatefulWidget {
@@ -107,8 +107,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                           child: ElevatedButton(
                             onPressed: () {
                               // TODO:
-                              Navigator.pushNamed(
-                                  context, UserSelectionScreen.id);
+                              Navigator.pushNamed(context, LoginScreen.id);
                             },
                             child: const Text("GET STARTED",
                                 style: kBoldSmallTextStyle),

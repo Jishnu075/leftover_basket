@@ -65,7 +65,6 @@ class SignUpScreen extends StatelessWidget {
                       passwordController.text,
                     );
                     Navigator.pop(context);
-                    // signup();
                   }),
             ],
           ),
